@@ -1,0 +1,21 @@
+---
+type: "SUITE"
+endpoint: "private-scoped"
+method: "GET"
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+
+assertions:
+- "@StatusCode != 200"
+
+tags:
+- "V1"
+
+authors:
+- "FX"
+
+category: "Functional"
+severity: "Critical"
+
+inactive: false
