@@ -21,7 +21,13 @@ generators:
 - type: "auth_invalid"
   assertions:
   - "@StatusCode != 200"
-  tags: null
+  tags:
+  - "OWASP A2"
+  - "OWASP A5"
+  - "OWASP A6"
+  - "OWASP A7"
+  - "[PIC DSS 3.0] 6.5.8"
+  - "[PIC DSS 3.0] 6.5.10"
   severity: null
   database: null
   inactive: false
@@ -32,7 +38,8 @@ generators:
   - "@StatusCode != 401"
   - "@StatusCode != 404"
   - "@StatusCode != 500"
-  tags: null
+  tags:
+  - "[PCI DSS 3.0] 6.5.2"
   severity: null
   database: null
   inactive: false
@@ -52,7 +59,9 @@ generators:
   - "@StatusCode != 401"
   - "@StatusCode != 404"
   - "@StatusCode != 500"
-  tags: null
+  tags:
+  - "OWASP A3"
+  - "[PIC DSS 3.0] 6.5.7"
   severity: null
   database: null
   inactive: false
@@ -63,7 +72,9 @@ generators:
   - "@StatusCode != 401"
   - "@StatusCode != 404"
   - "@StatusCode != 500"
-  tags: null
+  tags:
+  - "OWASP A1"
+  - "[PCI DSS 3.0] 6.5.1"
   severity: null
   database:
     name: "MySQL"
